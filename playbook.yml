@@ -1,11 +1,11 @@
 ---
   - name: Install and build Dockerfile
-    hosts: clients
+    hosts: client
     
     tasks:
-    - name: Include variables from config.yaml
+    - name: Include variables from config.yml
       include_vars:
-        file: config.yaml
+        file: config.yml
 
     - name: Install Docker dependencies for Ubuntu
       include_role:
